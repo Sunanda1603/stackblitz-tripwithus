@@ -6,11 +6,7 @@ const port = 3000;
 let cors = require('cors');
 
 app.use(cors());
-app.use(express.static('static'));
 
-app.get('/', (req, res) => {
-  res.sendFile(resolve(__dirname, 'pages/index.html'));
-});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
